@@ -1,5 +1,6 @@
 import './index.css'
 import Logo from '../logo'
+import { LuLogIn } from "react-icons/lu";
 import { LuShoppingCart } from "react-icons/lu";
 export default function Header() {
     return (
@@ -25,7 +26,9 @@ export default function Header() {
                 </ul>
                 <div>
                     <LuShoppingCart/>
-                    <button>Entrar</button>
+                    <button>
+                        <LuLogIn/>
+                    </button>
                 </div>
             </nav>
         </header>

@@ -1,0 +1,94 @@
+
+
+#popular{
+    display: flex;
+    padding: 90px;
+    flex-direction: column;
+}
+
+#popular > article{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+#popular > article img{
+    height: 120px;
+}
+#popular > article aside:first-of-type{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 50%;
+}
+
+#popular > article aside:last-of-type{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+
+#popular > article aside:last-of-type h1{
+    font-size: 34pt;
+}
+#popular > article aside:last-of-type h1 span{
+    margin-right: 10px;
+    color: var(--red);
+}
+
+#popular > article aside:last-of-type button{
+    padding: 12px;
+    width: 50%;
+    font-size: 11pt;
+    background-color: #ff641f;
+    opacity: 0.8;
+    color: var(--white);
+    transition: all .5s linear;
+}
+
+
+#popular button > svg{
+    color: var(--white);
+}
+#popular > article aside:last-of-type button:hover{
+    width: 55%;
+    opacity: 1;
+}
+
+#POpular{
+    display: flex;
+    background-color: var(--white);
+    box-shadow: 4px 4px 1ic rgba(0, 0, 0, 0.133);
+    border-radius: 8px;
+    padding: 20px;
+    justify-content: space-between;
+    position: relative;
+    transition: all .5s linear;
+}
+#POpular span{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#POpular svg{
+    color: var(--red);
+    font-size: 15pt;
+}
+
+#POpular button{
+    position: absolute;
+    right: -10px;
+    bottom: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 14pt;
+    color: var(--white);
+    background-color: var(--red);
+}
+
+#POpular:hover{
+    box-shadow: 1px 1px 1ic #ff641f;
+}
