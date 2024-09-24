@@ -1,0 +1,76 @@
+
+#heder{
+    background-color: var(--white);
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+
+}
+
+#heder nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+#heder nav ul{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+#heder nav div:last-of-type{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#heder a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    margin-bottom: 99px;
+    padding-bottom: 10px;
+    transition: all .5s ease-in-out;
+}
+#heder a::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background-color: var(--red);
+    width: 0%;
+    height: 3px;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+}
+#heder a:hover::after{
+    transition: all .5s ease-in-out;
+    width: 100%;
+}
+
+#heder button{
+    width: 100px;
+    padding: 10px;
+    background-color: var(--red);
+    color: var(--white);
+}
+
+#heder img{
+    height: 60px;
+    width: 60px;
+}
+
+#heder p{
+    font-weight: bolder;
+}
+#heder p::first-letter{
+    color: var(--red);
+}

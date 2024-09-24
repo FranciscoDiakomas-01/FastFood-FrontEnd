@@ -1,0 +1,20 @@
+
+
+#TopProduct{
+    background-color: var(--white);
+    display: flex;
+    position: relative;
+    padding: 24px;
+    height: 100px;
+    box-shadow: 4px 4px 4px black;
+}
+
+#TopProduct > button{
+    background-color: var(--red);
+    position: absolute;
+    width: 20px;
+    background-color: var(--red);
+    padding: 24px;
+    height: 100px;
+    right: 0;
+}

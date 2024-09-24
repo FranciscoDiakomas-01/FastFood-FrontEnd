@@ -1,0 +1,38 @@
+
+#discount{
+    position: absolute;
+    background-color: var(--white);
+    padding: 20px;
+    box-shadow: 6px 6px 2cqi rgba(0, 0, 0, 0.205);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#discount h2{
+    font-size: 22pt;
+}
+#discount div{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 18pt;
+}
+#discount p {
+    display: flex;
+    gap: 10px;
+    font-size: 14pt;
+}
+#discount span {
+    display: flex;
+    gap: 10px;
+    color: var(--red);
+    font-weight: bold;
+}
