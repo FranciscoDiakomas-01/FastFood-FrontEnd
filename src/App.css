@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
     scroll-behavior: smooth;
+    background-attachment: fixed;
 }
 
 button{

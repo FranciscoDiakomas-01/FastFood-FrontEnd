@@ -1,7 +1,6 @@
 import './index.css'
 import plate from '../../assets/prato.png'
 import Discount from '../discount'
-import arrow from '../../assets/right-arrow.png'
 function Main() {
     return (
         <section id='main'>
@@ -27,7 +26,6 @@ function Main() {
                         <p>
                             09:30 ás 18:30
                         </p>
-                        <img src={arrow} />
                     </div>
                     
             </article>

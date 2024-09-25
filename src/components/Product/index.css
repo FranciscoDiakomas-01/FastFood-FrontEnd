@@ -1,0 +1,24 @@
+#pd{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding-top: 120px;
+    
+}
+
+#pd article > h1{
+    font-size: 18pt;
+    margin-left: 40px;
+}
+
+#pd article > h1::first-letter{
+    color: var(--red);
+}
+
+#pd article > button{
+    width: 20%;
+    margin-left: 40px;
+    padding: 12px;
+    background-color: var(--red);
+    color: var(--white);
+}

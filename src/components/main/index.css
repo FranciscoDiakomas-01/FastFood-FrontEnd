@@ -51,12 +51,8 @@
 }
 #main #aberto{
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     right: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    height:120px ;
 }
 
 #main #aberto h1{
@@ -64,10 +60,3 @@
 }
 
 
-#main #aberto img{
-    height: 70px;
-    width: 170px;
-    position: absolute;
-    margin-left: -25px;
-    bottom: 0;
-}

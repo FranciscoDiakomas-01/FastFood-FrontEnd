@@ -1,0 +1,73 @@
+
+
+#card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--white);
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.266);
+    padding: 20px;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#card b{
+    font-size: 10pt;
+    color: var(--white);
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--red);
+    height: 30px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+#card img{
+    height: 150px;
+    width: 180px;
+    margin-left: 4%;
+}
+#card > div svg{
+    color: var(--red);
+}
+#card span{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+#card span  > div:last-of-type{
+    width: 100%;
+    display: flex;
+    gap: 4px;
+    justify-content: end;
+    height: 30px;
+}
+#card span  > div:last-of-type button{
+    width: 30%;
+    height: 100%;
+    font-size: 14pt;
+    background-color: var(--red);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card span  > div:last-of-type button:last-of-type{
+    background-color: var(--white);
+    color: var(--red);
+    border: solid 1px;
+}
+#procuctSide{
+    padding: 90px 0px;
+}
+
+#card figcaption{
+    font-weight: bold;
+}

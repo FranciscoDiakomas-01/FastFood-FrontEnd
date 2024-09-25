@@ -2,13 +2,13 @@
 
 #popular{
     display: flex;
-    padding: 90px;
     flex-direction: column;
 }
 
 #popular > article{
     display: flex;
     gap: 40px;
+    padding: 90px;
     justify-content: space-between;
 }
 
