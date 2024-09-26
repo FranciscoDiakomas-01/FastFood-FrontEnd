@@ -1,0 +1,114 @@
+
+
+
+#loginSingIn{
+
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image:linear-gradient(to left , rgba(0, 0, 0, 0.585) , rgba(0, 0, 0, 0.789)), url('../../assets/login.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+#loginSingIn article{
+    width: 40%;
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+    align-items: center;
+    padding: 30px;
+    justify-content: center;
+    backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 10px;
+    transition: all .5s linear;
+    height: 520px;
+}
+
+
+
+#loginSingIn article:first-of-type form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: all .5s linear;
+    position: relative;
+    position: relative;
+    height: 480px;
+}
+
+#loginSingIn article:first-of-type form:last-of-type{
+    position: relative;
+    left: 500px;
+    width: 0%;
+}
+
+#loginSingIn article:first-of-type #form1.Open{
+    
+    right: 500px;
+    width: 0%;
+}
+
+#loginSingIn article:first-of-type #form2.Open{
+    
+    left: 0;
+    width: 100%;
+}
+
+#loginSingIn article:first-of-type form button{
+    width: 100%;
+    padding: 15px;
+    background-color: var(--red);
+    color: var(--white);
+}
+#loginSingIn article:first-of-type form button:last-of-type{
+    width: 100%;
+    padding: 15px;
+    background-color: var(--white);
+    color: var(--red);
+}
+#loginSingIn input{
+    height: 50px;
+    padding-left: 50px;
+}
+#loginSingIn input[type = 'checkbox']{
+    height: 20px;
+    padding-left: 0px;
+}
+#loginSingIn div{
+    display: flex;
+    gap: 20px;
+}
+
+#loginSingIn aside{
+    display: flex;
+    position: relative;
+    gap: 20px;
+    flex-direction: column;
+}
+
+#loginSingIn aside i{
+    position: absolute;
+    left: -5px;
+    top: 43%;
+    font-size: 18pt;
+    background-color: var(--red);
+    height: 57%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8%;
+    font-weight: bold;
+    border-radius: 4px 0 0px 4px;
+    bottom: 0;
+}
+
+#loginSingIn a{
+    text-align: center;
+}

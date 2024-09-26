@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: sans-serif;
     scroll-behavior: smooth;
-    background-attachment: fixed;
 }
 
 button{
@@ -19,9 +18,31 @@ button{
     --yellow : #e5b420;
     --gray: #e0dede;
     --black : #000000;
+    --gray1: #f5f4f4;
 }
 section{
     
     min-height: 100dvh;
     width: 100%;
+}
+
+
+input{
+    height: 45px;
+    padding: 0 10px;
+    font-size: 12pt;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.092);
+}
+textarea{
+    height: 45px;
+    padding: 5px 10px;
+    font-size: 12pt;
+    height: 120px;
+    border: none;
+    outline: none;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.121);
+    border-radius: 4px;
 }

@@ -1,18 +1,10 @@
-import Header from "./components/header"
-import './app.css'
-import Main from "./components/main"
-import PopularProduct from "./components/popularProduct"
-import Products from "./components/Product"
-import Team from "./components/team/inde"
 
+import './app.css'
+import { Outlet } from "react-router-dom"
 function App() {
   return (
     <>
-      <Header/>
-      <Main/>
-      <PopularProduct/>
-      <Products/>
-      <Team/>
+      <Outlet/>
     </>
   )
 }
