@@ -1,0 +1,11 @@
+
+
+#DashBoard{
+    display: flex;
+    height: 100dvh;
+    width: 100%;
+    padding-left: 200px;
+    background-color: #efefef;
+    flex-direction: column;
+    gap: 20px;
+}

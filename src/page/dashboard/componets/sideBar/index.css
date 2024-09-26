@@ -1,0 +1,36 @@
+
+
+#sideBar{
+    overflow: hidden;
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background-color: var(--white);
+    flex-direction: column;
+    display: flex;
+    padding: 30px 10px;
+    justify-content: space-between;
+}
+
+#sideBar img{
+    height: 80px;
+    width: 80px;
+}
+
+#sideBar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#sideBar a{
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    background-color: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

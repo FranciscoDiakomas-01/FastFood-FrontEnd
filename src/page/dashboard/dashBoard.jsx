@@ -1,9 +1,17 @@
+import {Outlet} from 'react-router-dom'
+import SideBar from './componets/sideBar/index'
+import './index.css'
 
 
 export default function DashBoard() {
     return (
-    <div>
+    <main id='DashBoard'>
+            <SideBar/>
+            <aside>
 
-    </div>
+                oooo
+                <Outlet/>
+            </aside>
+    </main>
     );
 }

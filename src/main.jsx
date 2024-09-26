@@ -5,7 +5,7 @@ import { createBrowserRouter , RouterProvider } from 'react-router-dom'
 import {register} from 'swiper/element/bundle'
 import LadingPage from './page/LadingPage/ladingPage/index.jsx'
 import LoginSindIn from './page/LadingPage/LoginSindIn/index.jsx'
-
+import DashBoard from './page/dashboard/dashBoard.jsx'
 register()
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -28,6 +28,10 @@ const router = createBrowserRouter([
   {
     path : '/enter',
     element : <LoginSindIn/>
+  },
+  {
+    path : '/dashBoard',
+    element : <DashBoard/>
   }
 ])
 createRoot(document.getElementById('root')).render(
