@@ -1,0 +1,22 @@
+#header{
+    width: 100%;
+    background-color: var(--white);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    color: var(--red);
+    justify-content: end;
+}
+
+#header a{
+    height: 40px;
+    width: 40px;
+    background-color: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    border-radius: 20% 10%;
+}

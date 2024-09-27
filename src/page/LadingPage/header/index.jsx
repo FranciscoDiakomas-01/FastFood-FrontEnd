@@ -55,7 +55,9 @@ export default function Header() {
                     }
                 </ul>
                 <div>
-                    <FaUser/>
+                    <FaUser onClick={()=>{
+                        navi("/dash/home")
+                    }}/>
                     <button onClick={()=>{
                         navi("/enter")
                     }}>
