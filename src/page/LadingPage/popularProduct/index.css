@@ -3,12 +3,13 @@
 #popular{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 #popular > article{
     display: flex;
     gap: 40px;
-    padding: 90px;
+    padding: 0px 90px;
     justify-content: space-between;
 }
 
@@ -88,4 +89,18 @@
 
 #POpular:hover{
     box-shadow: 1px 1px 1ic #ff641f;
+}
+
+
+#CatProd{
+    transition: all .5s linear;
+    transform: translateX(1000px);
+    opacity: 0;
+}
+
+.itens{
+    transform: translateX(-1000px) rotate(60deg);
+    opacity: 0;
+    scale: 0.5;
+    transition: all .5s linear;
 }

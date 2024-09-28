@@ -1,6 +1,6 @@
 
 import ham1 from '../../assets/ham.png'
-import { useState } from "react"
+import { useState  , useEffect } from "react"
 import './index.css'
 import PopularCategory from './product'
 import pizza1 from '../../assets/pizza1.png'
@@ -8,9 +8,48 @@ import refri1 from '../../assets/refri1.png'
 import suco from '../../assets/suco1.png'
 import frango from '../../assets/frango.png'
 import salada from '../../assets/salada.png'
+import {gsap} from 'gsap'
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
+
 export default function PopularProduct() {
 
-    // eslint-disable-next-line no-unused-vars
+
+    useEffect(()=>{
+        gsap.registerPlugin(ScrollTrigger)
+        gsap.to('#CatProd', {
+            x : 0,
+            opacity : 1,
+            scrollTrigger : {
+                trigger : '.CatTigger',
+                scrub : true,
+                start : 'top 700px',
+                end : 'bottom 800px',
+
+            }
+        })
+
+        setTimeout(()=>{
+            
+        },800)
+        gsap.to('.itens', {
+            x : 0,
+            opacity : 1,
+            scale : 1,
+            rotate : '0deg',
+            scrollTrigger : {
+                trigger : '.CatTigger',
+                scrub : true,
+                start : 'top 700px',
+                end : 'bottom 800px',
+
+            }
+        })
+        return ()=>{
+            gsap.killTweensOf(".itens")
+            gsap.killTweensOf("#CatProd")
+        }
+
+    } , [])
     const [plateList , setPlateList] = useState([
         {
             id : crypto.randomUUID(),
@@ -57,17 +96,17 @@ export default function PopularProduct() {
     return (
         <section id='popular'>
             
-            <article>
+            <article className='CatTigger'>
 
-                <aside>
+                <aside className='itens'>
                     {
                         plateList.map((plate)=>(
-                            <PopularCategory description={plate.description} key={plate.id} img={plate.img}  stars={plate.stars}  />
+                            <PopularCategory description={plate.description} key={plate.id} img={plate.img}  stars={plate.stars}  re/>
                         ))
                     }
                 </aside>
 
-                <aside>
+                <aside id='CatProd'>
                     <h1>
                         <span>Categoria</span>
                         dos Pratos Mais Populares da <span>Fast</span>Food

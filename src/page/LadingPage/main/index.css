@@ -60,3 +60,16 @@
 }
 
 
+
+.mainText{
+    transform: translateX(-1000px) rotate(16deg);
+    opacity: 0;
+}
+
+.mainImg{
+    transform: translateX(1000px) rotate(180deg);
+    opacity: 0;
+    scale : 0.2
+}
+
+

@@ -1,0 +1,51 @@
+
+
+#Avaliacao{
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 100%;
+}
+
+#Avaliacao img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+#Avaliacao select{
+    height: 50px;
+}
+
+#Avaliacao form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.347);
+    padding: 20px;
+    width: 70%;
+    box-shadow: 4px 4px 4ic rgba(0, 0, 0, 0.203);
+    border-radius: 10px;
+    
+}
+#Avaliacao div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+#Avaliacao button{
+    width: 90%;
+    background-color: var(--red);
+    padding: 13px;
+    color: var(--white);
+}
+#Avaliacao button:last-of-type{
+    width: 90%;
+    background-color: var(--white);
+    padding: 13px;
+    color: var(--red);
+    border: solid 1px;
+}

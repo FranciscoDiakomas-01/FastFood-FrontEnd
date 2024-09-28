@@ -1,14 +1,55 @@
 
 import './index.css'
-import plate from '../../assets/pngegg (7).png'
+import plate from '../../assets/pizza1.png'
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import { useEffect } from 'react';
+
 export default function Team() {
+
+    useEffect(()=>{
+
+
+        gsap.registerPlugin(ScrollTrigger)
+        setTimeout(()=>{
+            gsap.to('.list', {
+                x : 0,
+                opacity : 1,
+                rotate : '0deg',
+                scrollTrigger : {
+                    trigger : '.TiggerAd',
+                    scrub : true,
+                    start : 'top 700px',
+                    end : 'bottom 700px',
+                }
+            })
+    
+        }, 500)
+        setTimeout(()=>{
+            gsap.to('.pizzza', 
+                {
+                    x : 0,
+                    opacity : 1,
+                    rotate : '0deg',
+                    scale : 1,
+                    scrollTrigger : {
+                        trigger : '.TiggerAd',
+                        scrub : true,
+                        start : 'top 700px',
+                        end : 'bottom 600px',
+                    }
+                }
+        
+        )
+        }, 1000)
+    }, [])
     return (
     <section id="team">
         <article>
-            <aside>
+            <aside className='TiggerAd'>
                 <div>
-                <h1>A FastFood Oferece Para Si o Seguinte!</h1>
-                <ul>
+                <h1  className='list'>A FastFood Oferece Para Si o Seguinte!</h1>
+                <ul className='list'>
                     <li>
                         <span>01</span>
                         <p>
@@ -55,7 +96,7 @@ export default function Team() {
 
                 </div>
                 
-                <img src={plate} loading='lazy'/>
+                <img src={plate} className='pizzza'/>
             </aside>
         </article>
 

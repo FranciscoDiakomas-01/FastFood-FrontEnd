@@ -1,0 +1,105 @@
+
+
+#carrinho{
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+
+#carrinho article:first-of-type{
+    width: 68%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    overflow-Y: scroll;
+    gap:15px;
+    padding: 10px;
+    height: 100%;
+    
+}
+
+#carrinho article:first-of-type::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#carrinho article:last-of-type{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 30px;
+    border-left: solid 1px var(--red);
+}
+
+#carrinho article form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 10px;
+    height: 100%;
+}
+#carrinho input , select{
+    height: 12%;
+}
+#carrinho input[type = 'checkbox']{
+    height: 20px;
+    box-shadow: none;
+    color: var(--red);
+}
+#carrinho article form div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+#carrinho article form button{
+    width: 100%;
+    padding: 12px;
+    background-color: var(--red);
+    color: var(--white);
+}
+#carrinho article form button:last-of-type{
+    background-color: var(--white);
+    color: var(--red);
+}
+
+
+
+#carrinho article header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 14pt;
+    font-weight: normal;
+    background-color: var(--red);
+    color: var(--white);
+    gap: 20px;
+}
+
+#carrinho article footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 15px;
+}
+#carrinho article footer span{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--red);
+    color: var(--white);
+    gap: 10px;
+}

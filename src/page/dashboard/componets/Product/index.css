@@ -1,0 +1,46 @@
+
+
+
+.CarrinhoElemn{
+    display: flex;
+    background-color: var(--white);
+    padding: 10px 5px;
+    height: 160px;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.175);
+}
+
+
+.CarrinhoElemn img{ 
+    height: 120px;
+    width: 120px;
+}
+.CarrinhoElemn span{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.CarrinhoElemn span div{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.CarrinhoElemn span div button{
+    width: 100%;
+    gap: 20px;
+    height: 30px;
+    background-color: var(--red);
+    color: var(--white);
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+.CarrinhoElemn span div button:last-of-type{
+    background-color: var(--white);
+    color: var(--red);
+    border: solid 1px;
+}

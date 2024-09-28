@@ -10,6 +10,7 @@
     color: white;
     background-position: center;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 
@@ -91,4 +92,16 @@
 
 #team strong{
     font-size: 12pt;
+}
+
+.list{
+    transform: translateX(-1000px);
+    opacity: 0;
+    transition: all .5s linear;
+}
+
+.pizzza{
+    transform: translateX(1000px) rotate(180deg);
+    scale : 0.1;
+    transition: all .5s linear;
 }

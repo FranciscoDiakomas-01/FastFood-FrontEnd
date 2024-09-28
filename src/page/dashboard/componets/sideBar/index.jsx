@@ -1,36 +1,38 @@
-import { IoSettings } from "react-icons/io5";
+
 import { Link } from "react-router-dom";
-import {MdAddShoppingCart  } from "react-icons/md";
 import { useState } from "react";
 import logo from '../../../assets/logo.png'
 import './index.css'
+import { BsUiChecksGrid } from "react-icons/bs";
+import { FaHistory , FaShoppingCart , FaRegStar , FaArrowLeft} from "react-icons/fa";
+
 export default function SideBar() {
-    const [activeLink , setActiveLink] = useState("Inicial")
+    const [activeLink , setActiveLink] = useState("Cardápio")
     const links =[
         {
             paht : "/dash/home",
-            name : "Inicial",
-            icon : <MdAddShoppingCart/>
+            name : "Cardápio",
+            icon : <BsUiChecksGrid/>
+        },{
+            paht : "/dash/card",
+            name : "Carrinho",
+            icon : <FaShoppingCart/>
         },
         {
-            paht : "/dash/ategory",
-            name : "Categoria",
-            icon : <MdAddShoppingCart/>
-        },{
             paht : "/dash/tags",
-            name : "Artigos",
-            icon : <MdAddShoppingCart/>
+            name : "Avalição",
+            icon : <FaRegStar/>
         },
         {
             paht : "/dash/movimento",
             name : "Histórico",
-            icon : <MdAddShoppingCart/>
+            icon : <FaHistory/>
         },
         {
-            paht : "/dash/config",
-            name : "Configurações",
-            icon : <IoSettings/>
-        },
+            paht : "/",
+            name : "Lading Page",
+            icon : <FaArrowLeft/>
+        }
     ]
     return (
     <nav id="sideBar">

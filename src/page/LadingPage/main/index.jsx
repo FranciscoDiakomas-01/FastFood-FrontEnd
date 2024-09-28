@@ -1,11 +1,39 @@
 import './index.css'
 import plate from '../../assets/prato.png'
 import Discount from '../discount'
+import { useEffect } from 'react'
+import {gsap} from'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 
 function Main() {
+    useEffect(()=>{
+        gsap.registerPlugin(ScrollTrigger)
+        setTimeout(()=>{
+            gsap.to('.mainText', {
+                x : 0,
+                opacity : 1,
+                rotate : '0deg',
+            })
+        }, 500)
+        setTimeout(()=>{
+            gsap.to('.mainImg', 
+                {
+                    x : 0,
+                    opacity : 1,
+                    rotate : '0deg',
+                    scale : 1,
+                }
+        
+        )
+        }, 1000)
+        return ()=>{
+            gsap.killTweensOf(".mainText")
+            gsap.killTweensOf(".mainImg")
+        }
+    } , [])
     return (
         <section id='main'>
-            <article>
+            <article className='mainText'>
                 <h1>
                     Comida <span>Saudável</span> <br />
                     está a sua Espera na <br />
@@ -19,7 +47,7 @@ function Main() {
                     <button>Reserva</button>
                 </div>
             </article>
-            <article>
+            <article className='mainImg'>
                 <Discount/>
                     <img src={plate} loading='lazy'/>
                     <div id='aberto'>

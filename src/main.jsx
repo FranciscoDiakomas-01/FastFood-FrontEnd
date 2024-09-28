@@ -7,13 +7,16 @@ import LadingPage from './page/LadingPage/ladingPage/index.jsx'
 import LoginSindIn from './page/LadingPage/LoginSindIn/index.jsx'
 import DashBoard from './page/dashboard/dashBoard.jsx'
 import HomeDash from './page/dashboard/pages/home/index.jsx'
+import Carrinho from './page/dashboard/pages/carrinho/index.jsx'
 register()
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
-import UserProvider
-from './context/userData.jsx'
+import UserProvider from './context/userData.jsx'
+import Avaliacao from './page/dashboard/pages/avaliacao/index.jsx'
+import Progresso from './page/dashboard/pages/progressso/index.jsx'
+import Profile from './page/dashboard/pages/profile/index.jsx'
 const router = createBrowserRouter([
 
   {
@@ -40,6 +43,7 @@ const router = createBrowserRouter([
     },
     {
         path : "/dash/card",
+        element : <Carrinho/>
     },
     {
         path : "/dash/ategory",
@@ -47,12 +51,15 @@ const router = createBrowserRouter([
         path : "/dash/reserva",
     },{
         path : "/dash/tags",
+        element : <Avaliacao/>
     },
     {
         path : "/dash/movimento",
+        element : <Progresso/>
     },
     {
-        path : "/dash/configuração",
+        path : "/dash/profile",
+        element : <Profile/>
     }
     ]
   }

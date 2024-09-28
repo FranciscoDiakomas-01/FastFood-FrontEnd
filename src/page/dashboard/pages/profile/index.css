@@ -1,0 +1,112 @@
+
+
+#Avaliacao{
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 100%;
+}
+
+#Avaliacao img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+#Avaliacao select{
+    height: 50px;
+}
+
+#Avaliacao form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.347);
+    padding: 20px;
+    width: 70%;
+    box-shadow: 4px 4px 4ic rgba(0, 0, 0, 0.203);
+    border-radius: 10px;
+    
+}
+#Avaliacao div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+#Avaliacao button{
+    width: 90%;
+    background-color: var(--red);
+    padding: 13px;
+    color: var(--white);
+}
+#Avaliacao button:last-of-type{
+    width: 90%;
+    background-color: var(--white);
+    padding: 13px;
+    color: var(--red);
+    border: solid 1px;
+}
+
+#file{
+    display: flex;
+    position: relative;
+    width: 16.5%;
+    height: 120px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#file p{
+    margin-left: 100px;
+    color: var(--red);
+    margin-top: -50px;
+    font-size: 13pt;
+    background-color: #f3efef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.214);
+}
+#file input{
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    opacity: 0;
+}
+
+
+#Avaliacao article{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+#Avaliacao article  div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    
+}
+
+#Avaliacao article  div svg{
+    position: absolute;
+    bottom: 15px;
+    left: 5px;
+    font-size: 14pt;
+    color: var(--red);
+}
+
+#Avaliacao article  div input{
+    padding-left: 30px;
+}

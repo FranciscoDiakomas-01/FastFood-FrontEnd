@@ -1,0 +1,106 @@
+
+
+#tableProgresso{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+}
+
+#tableProgresso > form{
+    padding: 30px 20px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    height: 40px;
+    align-items: center;
+}
+
+#tableProgresso > form input{
+    width: 20%;
+}
+#tableProgresso h5 , #tableProgresso h1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 22pt;
+    font-weight: normal;
+    padding: 10px 0;
+}
+
+#tableProgresso   > form button{
+    height: 40px;
+    background-color: var(--red);
+    width: 5%;
+    color: var(--white);
+
+}
+
+
+#tableProgresso table{
+    padding: 30px 20px;
+    width: 100%;
+    
+}
+
+#tableProgresso table thead{
+    width: 100%;
+    background-color: var(--red);
+}
+
+#tableProgresso table thead td{
+    background-color: var(--red);
+    padding: 10px;
+    color: var(--white);
+}
+
+#tableProgresso table tbody td{
+    padding: 10px ;
+    
+}
+#tableProgresso table tbody td:last-of-type{
+    width: 180px;
+}
+#tableProgresso table tbody tr:nth-child(even){
+    color: var(--red);
+    background-color: var(--gray);
+}
+
+#tableProgresso table  td:last-of-type button{
+    width: 70px;
+    background-color: var(--red);
+    height: 30px;
+    margin: 0 2px;
+    color: var(--white);
+}
+
+#tableProgresso table  td:last-of-type button:last-of-type{
+    background-color: var(--white);
+    color: var(--red);
+    border: solid 1px;
+}
+
+#tableProgresso  > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+}
+
+#tableProgresso  > div  > span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#tableProgresso  > div  button{
+    padding: 8px 25px;
+    background-color: var(--red);
+    color: var(--white);
+    font-weight: bold;
+    font-size: 12pt;
+}

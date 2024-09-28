@@ -1,0 +1,89 @@
+
+
+
+#dasHome{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    height: 100%;
+    padding: 30px 10px;
+}
+
+#dasHome header {
+    display: flex;
+    width: 100%;
+}
+#dasHome header nav {
+    display: flex;
+    width: 100%;
+    gap: 1px;
+    border-radius: 10px;
+}
+#dasHome header nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+#dasHome header nav ul img {
+    width: 37px;
+}
+
+#dasHome header nav ul a {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+    width: 10%;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+#dasHome  >  article{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 5px;
+    gap: 10px;
+    height: 88%;
+}
+
+#ShoPcard figure{
+    height: 97%;
+    align-items: center;
+    gap: 7px;
+}
+
+#ShoPcard figure img{
+    height: 60%;
+    width: 50%;
+}
+
+
+#dasHome footer{
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#dasHome footer span{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#dasHome  figcaption{
+    font-weight: normal;
+}
+#dasHome footer span button{ 
+    background-color: var(--red);
+    width: 50px;
+    height: 30px;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 13pt;
+}

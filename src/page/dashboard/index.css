@@ -11,7 +11,9 @@
 
 
 #DashBoard aside{
-    
-    padding-left: 270px;
-    margin-top: 200px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 88.9%;
+    width: 83%;
 }
