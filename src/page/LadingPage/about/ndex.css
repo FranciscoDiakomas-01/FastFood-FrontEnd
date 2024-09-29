@@ -8,6 +8,7 @@
     overflow-y: hidden;
     padding-bottom: 0;
     gap: 40px;
+    overflow-x: hidden;
 }
 
 
@@ -114,4 +115,18 @@
     border-top-right-radius: 4px;
     font-size: 14pt;
     border-bottom-right-radius: 4px;
+}
+
+
+.textAbout{
+    transition: all .5s linear;
+    transform: translateX(-10000px)  rotate(60deg);
+    opacity: 0;
+}
+
+.imgAbout{
+    transform: translateX(10000px) rotate(60deg);
+    opacity: 0;
+    scale: 0.5;
+    transition: all .5s linear;
 }
